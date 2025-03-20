@@ -15,9 +15,15 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
  * ```Task``` sınıfı içerisinde 5 tane ```instance variable``` olmalı. ```project``` => string ```description``` => string ```assignee``` => string
  * ```priority``` org.example.entity paketi altında Priority şeklinde bir Enum tipinde olmalı. Priority{HIGH, MED, LOW} şeklinde oluşturabilirsiniz.
  * ```status``` org.example.entity paketi altında Status şeklinde bir Enum tipinde olmalı. Status{IN_QUEUE, ASSIGNED, IN_PROGRESS} şeklinde oluşturabilirsiniz.
+
+
  * Task'ın eşsizliğini ```project``` ve ```description``` değerleri birlikte belirler.
+
  * TaskData sınıfı 4 tane değişkene sahip olmalı  ```annsTasks => Set<Task>```   ```bobsTasks => Set<Task>```  ```carolsTasks => Set<Task>``` ```unassignedTasks => Set<Task>``` Bu 4 değerde constructor vasıtasıyla set edilebilmeli.
- * TaskData sınıfı ```getTasks()``` adlı bir metoda sahip olmalı. method parametre olarak bir String almalı. Bu 4 değerden herhangi birini alabilir. ("ann", "bob", "carol", "all") Metodun dönüş değeri ```Set<Task>``` olmalı.
+
+
+ * TaskData sınıfı ```getTasks()``` adlı bir metoda sahip olmalı. method parametre olarak bir String almalı. Bu 4 değerden herhangi birini alabilir. ("ann", "bob", "carol", "all") Metodun dönüş değeri 
+```Set<Task>``` olmalı.
  
 ### Senaryo
 
@@ -35,7 +41,9 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
 
 * Bu görevleri yapabilmek TaskData sınıfı altında aşağıdaki metodları içerisinde aşağıdaki metodları yazmalısın,
 * ```getUnion()``` metodu bir set listesi alır ve aldığı tüm set değerlerini union ile birleştirip döner.
+
 * ```getIntersect()``` metodu iki tane set alır ve aralarındaki kesişim kümesini bulup döner.
+
 * ```getDifference()``` metodu iki tane set alır ve ikinci set içerisindeki verileri ilk set içerisindeki verilerden çıkarır.
 
 ### 2-) Challenge
